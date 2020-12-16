@@ -1,6 +1,7 @@
 let app = new Vue ({
   el: "#root",
   data: {
+    newThing: "",
     myList: [
       "do something",
       "do else",

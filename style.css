@@ -27,3 +27,11 @@ input {
 ul {
   background-color: grey;
 }
+li{
+  list-style-type: none;
+  position: relative;
+}
+i{
+  position: absolute;
+  right: 5px;
+}
