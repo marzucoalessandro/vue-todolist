@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 50px;
+  display: block;
+  margin-bottom: 20px;
+}
+input {
+  margin-bottom: 20px;
+}
+ul {
+  background-color: grey;
+}
