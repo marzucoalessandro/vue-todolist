@@ -16,8 +16,8 @@
 
           <img src="./img/logo.png" alt="">
 
-          <input type="text"  v-model="newThing">
-          <button @click="addThing">Add</button>
+          <input type="text"  v-model="newThing" v-on:keyup.enter="addThing">
+          <button @click="addThing" >Add</button>
 
           <p><strong>Todo List</strong></p>
 
