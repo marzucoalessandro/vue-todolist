@@ -16,15 +16,15 @@
 
           <img src="./img/logo.png" alt="">
 
-          <input type="text"  v-model="newThing" v-on:keyup.enter="addThing">
+          <input type="text"  name="" v-model="newThing" v-on:keyup.enter="addThing">
           <button @click="addThing">Add</button>
 
-          <p><strong>Todo List</strong></p>
+          <p class="list"><strong>Todo List</strong></p>
 
           <ul v-if="myList.length">
             <li v-for="item in myList"> {{item}} <i @click="removeThing" class="fas fa-times-circle"></i></li>
           </ul>
-          <p v-else>Non ci sono cose da fare!</p>
+          <p v-else><strong>Non ci sono cose da fare!</strong></p>
         </div>
 
       </div>

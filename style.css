@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: lightgrey;
+  background-color: #94aab1;
 }
 
 #root {
@@ -23,15 +23,32 @@ img {
 }
 input {
   margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  height: 30px;
+  width: 250px;
+}
+button{
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
 }
 ul {
-  background-color: grey;
+  background-color: lightgrey;
+  border-radius: 5px;
 }
 li{
   list-style-type: none;
   position: relative;
+  height: 20px;
+  padding-left: 5px;
 }
 i{
   position: absolute;
   right: 5px;
+  top: 2px;
+}
+.list {
+  margin-bottom: 10px;
 }
