@@ -22,7 +22,7 @@
           <p><strong>Todo List</strong></p>
 
           <ul v-for="(item) in myList">
-            <li> {{item}} <i class="fas fa-times-circle"></i></li>
+            <li> {{item}} <i @click="removeThing" class="fas fa-times-circle"></i></li>
           </ul>
         </div>
 

@@ -10,7 +10,12 @@ let app = new Vue ({
   },
   methods: {
     addThing (){
+    
       this.myList.push(this.newThing);
+    },
+    removeThing(){
+      this.myList.pop(this.myList.item)
+
     }
 
   }
