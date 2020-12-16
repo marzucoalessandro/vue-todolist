@@ -9,6 +9,9 @@ let app = new Vue ({
     ]
   },
   methods: {
+    addThing (){
+      this.myList.push(this.newThing);
+    }
 
   }
 })
