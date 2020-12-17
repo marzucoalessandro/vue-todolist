@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <title>Document</title>
+</head>
+<body>
+      <!-- costruiamo un container per i ns elementi che chiamiamo root e che poi richiamero in vue -->
+      <div id="root">
+        <!-- poniamo all'interno un contenitore con logo e form -->
+        <div class="container">
+
+          <img src="./img/logo.png" alt="">
+
+          <input type="text"  name="" v-model="newThing" v-on:keyup.enter="addThing">
+          <button @click="addThing">Add</button>
+
+          <p class="list"><strong>Todo List</strong></p>
+
+          <ul v-if="myList.length">
+            <li v-for="item in myList"> {{item}} <i @click="removeThing" class="fas fa-times-circle first"></i><i class="fas fa-pen second"></i></li>
+          </ul>
+          <p v-else><strong>Non ci sono cose da fare!</strong></p>
+        </div>
+
+      </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
