@@ -26,8 +26,9 @@ let app = new Vue ({
       "do something",
       "do else",
       "do something else"
-    ],
-    replaceThing: ""
+    ]
+
+
   },
   methods: {
     addThing (){
@@ -43,10 +44,10 @@ let app = new Vue ({
     },
     replace(){
       replaceThing: prompt("modifica questo item"),
-      this.myList.pop(this.myList.item),
-      this.mylist.push(this.replaceThing)
+      this.myList.pop(this.item),
+      this.myList.push(this.replaceThing)
+    },
 
 
-    }
   },
 })
