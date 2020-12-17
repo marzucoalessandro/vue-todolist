@@ -26,7 +26,7 @@ let app = new Vue ({
       "do something",
       "do else",
       "do something else"
-    ]
+    ],
 
 
   },
@@ -39,13 +39,15 @@ let app = new Vue ({
       }
     },
     removeThing(index){
-      this.$delete(this.myList, index);
-    }
-    // replace(){
-    //   replaceThing: prompt("modifica questo item"),
-    //   this.myList.pop(this.myList.item),
-    //   this.myList.push(this.replaceThing)
-    // },
+      this.myList.splice(index, 1);
+    },
+
+    replace(index){
+      let replaceThing = prompt("modifica questo item");
+      console.log(replaceThing);
+      this.myList.splice(index, 1, replaceThing);
+
+    },
 
 
   },
