@@ -22,9 +22,10 @@
           <p class="list"><strong>Todo List</strong></p>
 
           <ul v-if="myList.length">
-            <li v-for="item in myList"> {{item}} <i @click="removeThing" class="fas fa-times-circle first"></i><i class="fas fa-pen second"></i></li>
+            <li v-for="(item, index) in myList"> {{item}} <i @click="removeThing" class="fas fa-times-circle first"></i><i v-for="(item, index) in myList "@click="replace" class="fas fa-pen second"></i></li>
           </ul>
           <p v-else><strong>Non ci sono cose da fare!</strong></p>
+
         </div>
 
       </div>
