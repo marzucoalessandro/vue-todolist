@@ -38,15 +38,14 @@ let app = new Vue ({
         this.myList.push(this.newThing);
       }
     },
-    removeThing(){
-      this.myList.pop(this.myList.item)
-
-    },
-    replace(){
-      replaceThing: prompt("modifica questo item"),
-      this.myList.pop(this.item),
-      this.myList.push(this.replaceThing)
-    },
+    removeThing(index){
+      this.$delete(this.myList, index);
+    }
+    // replace(){
+    //   replaceThing: prompt("modifica questo item"),
+    //   this.myList.pop(this.myList.item),
+    //   this.myList.push(this.replaceThing)
+    // },
 
 
   },
